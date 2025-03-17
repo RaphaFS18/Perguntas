@@ -231,6 +231,10 @@ console.log(somaArray([1, 2, 3, 4]));   //Fica 2x1 + 2x2 + 2x3 + 2x4 = 20
 
 Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
 
+R: O produto é uma classe geral, tipo um molde para qualquer coisa que pode ser vendida, como cadeiras, mesas, celular. Ela já vem com um desconto de 10%.
+
+Ja o ivro, é uma versão mais específica de Produto, mas como tem descontos diferentes, a gente precisa mudar essa regra. Então, dentro da classe Livro, a gente cria um novo método calcularDesconto(), que dá 20% em vez de 10%.
+
 ```javascript
 // Classe base Produto
 class Produto {
